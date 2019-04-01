@@ -20,13 +20,13 @@ $.path.task.forEach(function(taskPath) {
 
 $.gulp.task('default', $.gulp.series(
   'clean',
+  'sprite',
   $.gulp.parallel(
     'sass',
     'js:foundation',
     'js:process',
     'css:foundation',
     'sprite:svg',
-    'sprite'
   ),
   $.gulp.parallel(
     'watch',
