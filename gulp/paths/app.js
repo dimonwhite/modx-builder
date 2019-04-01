@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = [
-  $.config.root + '/dev/js/main.js'
+  './public_html/assets/dev/js/main.js'
 ];
