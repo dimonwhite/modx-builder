@@ -27,9 +27,9 @@ $.gulp.task('default', $.gulp.series(
     'js:process',
     'css:foundation',
     'sprite:svg',
+    'copy',
   ),
   $.gulp.parallel(
     'watch',
-    'copy'
   )
 ));
